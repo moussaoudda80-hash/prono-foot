@@ -1,0 +1,72 @@
+[
+ {
+  "league": "Qualifications CAN 2027",
+  "kickoff": "2026-11-17T16:00:00Z",
+  "home": "Gambie",
+  "away": "Côte d’Ivoire",
+  "market": "2",
+  "confidence": null,
+  "odds": null,
+  "source": "Sports Mole (score 1-2)"
+ },
+ {
+  "league": "Qualifications CAN 2027",
+  "kickoff": "2026-11-17T16:00:00Z",
+  "home": "Kenya",
+  "away": "Afrique du Sud",
+  "market": "2",
+  "confidence": null,
+  "odds": null,
+  "source": "Sports Mole (score 1-2)"
+ },
+ {
+  "league": "Qualifications CAN 2027",
+  "kickoff": "2026-11-17T16:00:00Z",
+  "home": "Kenya",
+  "away": "Afrique du Sud",
+  "market": "2",
+  "confidence": null,
+  "odds": 1.74,
+  "source": "Goal.com (cote Betway)"
+ },
+ {
+  "league": "Qualifications CAN 2027",
+  "kickoff": "2026-11-17T16:00:00Z",
+  "home": "Togo",
+  "away": "Algérie",
+  "market": "2",
+  "confidence": 73,
+  "odds": null,
+  "source": "Foresportia (72,8 %)"
+ },
+ {
+  "league": "Nations League",
+  "kickoff": null,
+  "home": "Irlande",
+  "away": "Kosovo",
+  "market": "1X",
+  "confidence": 76,
+  "odds": 1.24,
+  "source": "180Score"
+ },
+ {
+  "league": "Nations League",
+  "kickoff": null,
+  "home": "Danemark",
+  "away": "Norvège",
+  "market": "Plus de 1.5",
+  "confidence": 79,
+  "odds": 1.17,
+  "source": "180Score"
+ },
+ {
+  "league": "Nations League",
+  "kickoff": null,
+  "home": "Ukraine",
+  "away": "Géorgie",
+  "market": "1X",
+  "confidence": 79,
+  "odds": 1.38,
+  "source": "180Score"
+ }
+]

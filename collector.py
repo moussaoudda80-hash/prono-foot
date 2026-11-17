@@ -127,18 +127,19 @@ def consensus(rows, min_sources=1):
         games[k][norm_market(r["market"])].append(r)
     out = []
     for k, markets in games.items():
-        mk, items = max(markets.items(), key=lambda kv: (len(kv[1]), sum(x["confidence"] for x in kv[1]) / len(kv[1])))
+        mk, items = max(markets.items(), key=lambda kv: (len(kv[1]), sum(x.get("confidence") or 0 for x in kv[1]) / len(kv[1])))
         if len(items) < min_sources:
             continue
         odds = [x["odds"] for x in items if x.get("odds")]
+        confs = [x["confidence"] for x in items if x.get("confidence") is not None]
         total = len({x["source"] for g in markets.values() for x in g})
         first = names[k]
         out.append({"home": first["home"], "away": first["away"], "market": mk,
                     "league": first.get("league") or "Autres", "kickoff": first.get("kickoff"),
-                    "confidence": round(sum(x["confidence"] for x in items) / len(items)),
+                    "confidence": round(sum(confs) / len(confs)) if confs else None,
                     "odds": round(sum(odds) / len(odds), 2) if odds else None,
                     "sources": sorted({x["source"] for x in items}), "agreement": f"{len(items)}/{total}"})
-    return sorted(out, key=lambda x: (x["league"], x["kickoff"] or "", -x["confidence"]))
+    return sorted(out, key=lambda x: (x["league"], x["kickoff"] or "", -(x["confidence"] or 0)))
 
 
 def main():

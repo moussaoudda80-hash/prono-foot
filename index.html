@@ -35,6 +35,7 @@ nav div{display:flex;max-width:560px;margin:auto}nav button{flex:1;background:no
 var DATA=[],mkt="Tous",lg="Toutes",tab="m",favs={};
 try{favs=JSON.parse(localStorage.getItem("pf_favs")||"{}")}catch(e){}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function cf(m){return m.confidence==null?"—":m.confidence+"%"}
 function key(m){return m.home+"-"+m.away}
 function hour(m){if(!m.kickoff)return"";var d=new Date(m.kickoff);return isNaN(d)?"":d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})}
 function row(id,list,cur,set){var c=document.getElementById(id);c.innerHTML="";
@@ -49,9 +50,9 @@ function draw(){
  L.forEach(function(m){var k=key(m);
   if(m.league!=last){o+='<div class="league">'+esc(m.league)+'</div>';last=m.league}
   o+='<div class="m"><div class="row"><div class="t">'+hour(m)+'</div><div class="teams">'+esc(m.home)+'<br>'+esc(m.away)+'</div>'+
-  '<div class="pick"><b>'+esc(m.market).toUpperCase()+'</b><span>'+m.confidence+'% ⚡ <em>'+(m.odds?m.odds.toFixed(2):"NA")+'</em></span></div>'+
+  '<div class="pick"><b>'+esc(m.market).toUpperCase()+'</b><span>'+cf(m)+' ⚡ <em>'+(m.odds?m.odds.toFixed(2):"NA")+'</em></span></div>'+
   '<button class="star'+(favs[k]?" on":"")+'" data-s="'+esc(k)+'">'+(favs[k]?"★":"☆")+'</button></div>'+
-  '<div class="more">Confiance moyenne '+m.confidence+'%<div class="bar"><i style="width:'+m.confidence+'%"></i></div>Accord entre sources : '+esc(m.agreement||"")+'<br>Sources : '+esc((m.sources||[]).join(", "))+'</div></div>'});
+  '<div class="more">Confiance moyenne : '+cf(m)+'<div class="bar"><i style="width:'+(m.confidence||0)+'%"></i></div>Accord entre sources : '+esc(m.agreement||"")+'<br>Sources : '+esc((m.sources||[]).join(", "))+'</div></div>'});
  document.getElementById("list").innerHTML=o}
 document.getElementById("list").onclick=function(e){
  var s=e.target.closest("[data-s]");

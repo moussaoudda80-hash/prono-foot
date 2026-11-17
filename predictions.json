@@ -2,48 +2,83 @@
   "date": "2026-11-17",
   "matches": [
     {
-      "home": "Denmark",
-      "away": "Norway",
+      "home": "Danemark",
+      "away": "Norvège",
       "market": "Plus de 1.5",
       "league": "Nations League",
-      "kickoff": "2026-11-17T20:45:00Z",
-      "confidence": 78,
+      "kickoff": null,
+      "confidence": 79,
       "odds": 1.17,
       "sources": [
-        "DemoA",
-        "DemoB"
+        "180Score"
       ],
-      "agreement": "2/3"
+      "agreement": "1/1"
     },
     {
       "home": "Ukraine",
-      "away": "Georgia",
+      "away": "Géorgie",
       "market": "1X",
       "league": "Nations League",
-      "kickoff": "2026-11-17T20:45:00Z",
-      "confidence": 76,
+      "kickoff": null,
+      "confidence": 79,
       "odds": 1.38,
       "sources": [
-        "DemoA",
-        "DemoB",
-        "DemoC"
+        "180Score"
       ],
-      "agreement": "3/3"
+      "agreement": "1/1"
     },
     {
-      "home": "Rep. Of Ireland",
+      "home": "Irlande",
       "away": "Kosovo",
       "market": "1X",
       "league": "Nations League",
-      "kickoff": "2026-11-17T20:45:00Z",
-      "confidence": 73,
+      "kickoff": null,
+      "confidence": 76,
       "odds": 1.24,
       "sources": [
-        "DemoA",
-        "DemoB",
-        "DemoC"
+        "180Score"
       ],
-      "agreement": "3/3"
+      "agreement": "1/1"
+    },
+    {
+      "home": "Togo",
+      "away": "Algérie",
+      "market": "2",
+      "league": "Qualifications CAN 2027",
+      "kickoff": "2026-11-17T16:00:00Z",
+      "confidence": 73,
+      "odds": null,
+      "sources": [
+        "Foresportia (72,8 %)"
+      ],
+      "agreement": "1/1"
+    },
+    {
+      "home": "Gambie",
+      "away": "Côte d’Ivoire",
+      "market": "2",
+      "league": "Qualifications CAN 2027",
+      "kickoff": "2026-11-17T16:00:00Z",
+      "confidence": null,
+      "odds": null,
+      "sources": [
+        "Sports Mole (score 1-2)"
+      ],
+      "agreement": "1/1"
+    },
+    {
+      "home": "Kenya",
+      "away": "Afrique du Sud",
+      "market": "2",
+      "league": "Qualifications CAN 2027",
+      "kickoff": "2026-11-17T16:00:00Z",
+      "confidence": null,
+      "odds": 1.74,
+      "sources": [
+        "Goal.com (cote Betway)",
+        "Sports Mole (score 1-2)"
+      ],
+      "agreement": "2/2"
     }
   ]
 }
