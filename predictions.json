@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-17",
+  "matches": [
+    {
+      "home": "Denmark",
+      "away": "Norway",
+      "market": "Plus de 1.5",
+      "confidence": 78,
+      "odds": 1.17,
+      "sources": [
+        "DemoA",
+        "DemoB"
+      ],
+      "agreement": "2/3"
+    },
+    {
+      "home": "Ukraine",
+      "away": "Georgia",
+      "market": "1X",
+      "confidence": 76,
+      "odds": 1.38,
+      "sources": [
+        "DemoA",
+        "DemoB",
+        "DemoC"
+      ],
+      "agreement": "3/3"
+    },
+    {
+      "home": "Rep. Of Ireland",
+      "away": "Kosovo",
+      "market": "1X",
+      "confidence": 73,
+      "odds": 1.24,
+      "sources": [
+        "DemoA",
+        "DemoB",
+        "DemoC"
+      ],
+      "agreement": "3/3"
+    }
+  ]
+}
