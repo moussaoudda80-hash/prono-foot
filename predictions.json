@@ -5,6 +5,8 @@
       "home": "Denmark",
       "away": "Norway",
       "market": "Plus de 1.5",
+      "league": "Nations League",
+      "kickoff": "2026-11-17T20:45:00Z",
       "confidence": 78,
       "odds": 1.17,
       "sources": [
@@ -17,6 +19,8 @@
       "home": "Ukraine",
       "away": "Georgia",
       "market": "1X",
+      "league": "Nations League",
+      "kickoff": "2026-11-17T20:45:00Z",
       "confidence": 76,
       "odds": 1.38,
       "sources": [
@@ -30,6 +34,8 @@
       "home": "Rep. Of Ireland",
       "away": "Kosovo",
       "market": "1X",
+      "league": "Nations League",
+      "kickoff": "2026-11-17T20:45:00Z",
       "confidence": 73,
       "odds": 1.24,
       "sources": [

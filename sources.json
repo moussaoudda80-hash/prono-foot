@@ -1,6 +1,5 @@
 [
-  {"name": "EXEMPLE-a-remplacer",
-   "url": "https://exemple.com/api/predictions?date={date}",
-   "list_path": "data.matches",
-   "fields": {"home": "home.name", "away": "away.name", "market": "tip", "confidence": "probability", "odds": "odd"}}
+  {"type": "manual", "name": "Manuel", "file": "manual.json"},
+  {"type": "apifootball", "name": "API-Football", "key_env": "APIFOOTBALL_KEY",
+   "leagues": [12, 20, 6, 36, 29, 5, 2, 3, 39, 61, 78, 135, 140], "max_fixtures": 30, "enabled": false}
 ]
